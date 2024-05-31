@@ -1,3 +1,9 @@
+/*
+    Basic input
+    Author: Sebastian Sroczyk
+    Date: 30/05/2024
+*/
+
 // # - preprocessor directives: can be used to make specifc code to run on specific machines
 // #include - includes files and any libraries you need to run the source code
 #include <iostream>
