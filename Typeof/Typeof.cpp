@@ -1,7 +1,7 @@
 /*
     Using typeof()
     Author: Sebastian Sroczyk
-    Date: 02/05/2024
+    Date: 02/06/2024
 */
 
 #include <iostream>
