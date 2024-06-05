@@ -10,6 +10,16 @@ using namespace std;
 
 int age {19}; // Global Variable - can be used anywhere inside the class very unsafe should be used often or at all.
 
+/*
+
+List initialization does not allow narrowing (§iso.8.5.4). That is:
+
+- An integer cannot be converted to another integer that cannot hold its value. For example, char to int is allowed, but not int to char.
+- A floating-point value cannot be converted to another floating-point type that cannot hold its value. For example, float to double is allowed, but not double to float.
+- A floating-point value cannot be converted to an integer type.
+- An integer value cannot be converted to a floating-point type.
+
+*/
 
 // Calculating area of a room in meters
 
