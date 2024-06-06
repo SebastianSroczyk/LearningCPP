@@ -77,6 +77,6 @@ int main(){
 
     cout << "Rating at index 0,2: " << movieRatings[0][2] << endl;
     cout << "Rating at index 0,2: " << movieRatings.at(0).at(2) << endl;
-
+    
     return 0;
 }
