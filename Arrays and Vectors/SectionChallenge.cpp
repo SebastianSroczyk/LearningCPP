@@ -55,4 +55,6 @@ int main() {
     
     cout << "\nIndex 0 of vector1: "<< vector1.at(0) << " and the vector size is: " << vector1.size() << endl;
     cout << "Index 1 of vector1: "<< vector1.at(1) << " and the vector size is: " << vector1.size() << endl;
+
+    return 0;
 }
