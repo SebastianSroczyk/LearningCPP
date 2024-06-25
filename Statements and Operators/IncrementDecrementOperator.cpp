@@ -38,10 +38,24 @@ int main() {
     counter++;
     cout << "The counter is now: " << counter << endl;
 
+    /* =====================================================================================
+        The difference between postfix and prefix notation on incrementation/decrementation
+    ====================================================================================== */
+
     // Using a Prefix Increment operator to counter
     cout << "\nThe counter is: " << counter << endl;
-    ++counter;
-    cout << "The counter is now: " << counter << endl;
+    result = ++counter;
+    cout << "The prefix counter is now: " << counter << endl;
+    cout << "While the result is at: " << result << endl;
+
+    // Using a Postfix Increment operator to counter
+    cout << "\nThe counter is: " << counter << endl;
+    result = counter++;
+    cout << "The postfix counter is now: " << counter << endl;
+    cout << "While the result is at: " << result << endl;
+
+
+
 
     return 0;
 }
