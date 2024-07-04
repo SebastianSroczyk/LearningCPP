@@ -54,8 +54,29 @@ int main() {
     cout << "The postfix counter is now: " << counter << endl;
     cout << "While the result is at: " << result << endl;
 
+    /*  ====================================
+            Example of weird code 
+    ===================================== */
 
+    counter = 10;
+    result = 0;
 
+    cout << "\nCounter: " << counter <<endl; // displays counter as 10
+
+    result = ++counter + 10; // prefix incrementaion
+
+    cout << "Counter: " << counter << endl; // displays counter as 11
+    cout << "Result: " << result << endl; // displays result as 21
+
+    counter = 10;
+    result = 0;
+
+    cout << "\nCounter: " << counter <<endl; // displays counter as 10
+
+    result = counter++ + 10; // prefix incrementaion
+
+    cout << "Counter: " << counter << endl; // displays counter as 11
+    cout << "Result: " << result << endl; // displays result as 20
 
     return 0;
 }
