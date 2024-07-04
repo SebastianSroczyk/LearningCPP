@@ -1,7 +1,7 @@
 /*
-    Simple Use of Increment and Decrement Operator.
+    Mixed Expressions and Conversions
     Author: Sebastian Sroczyk
-    Date: 09/06/2024
+    Date: 04/07/2024
 */
 
 #include <iostream>
