@@ -1,7 +1,7 @@
 /*
-    Mixed Expressions and Conversions
+    Logical Operators
     Author: Sebastian Sroczyk
-    Date: 04/07/2024
+    Date: 05/07/2024
 */
 
 #include <iostream>
