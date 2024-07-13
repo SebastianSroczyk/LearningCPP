@@ -117,9 +117,10 @@ int main(){
                 for(auto val: list_Of_Integers){
                     if(num == val){
                         num_Repeats = true;
+                        break;
                     }
                 }
-                
+
                 if(num_Repeats){
                     cout << "This number is already in the list, try a different number." << endl;
                 }
