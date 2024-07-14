@@ -1,5 +1,5 @@
 /*
-    Character Functions
+    C-Style Strings
     Author: Sebastian Sroczyk
     Date: 13/07/2024
 */
