@@ -19,7 +19,7 @@
 using namespace std;
 
 /*
-        These functions here are called 'Prototypes'
+        The functions above main() here are called 'Prototypes'
 
         Prototype Functions - Tell the compiler what it needs to know iwthout a full function definition (AKA forward declarations)
                               
