@@ -44,6 +44,8 @@ using namespace std;
                                             return 0;
                                         }
 
+                                NOTE: Simular to how default constructors work in C#
+
 */
 
 double calc_cost(double base_cost, double tax_rate = 0.06, double shipping = 3.50);
@@ -71,6 +73,8 @@ int main(){
     greeting("Jannet Loves", "Mrs");
 
     greeting("David Robs");
+
+    
 
 
     return 0;
