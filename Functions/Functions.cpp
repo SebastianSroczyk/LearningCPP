@@ -68,11 +68,6 @@ void display_vecotr(vector<string> v);
 
 int main(){
     int num1{};
-
-    
-
-
-
     num1 = display_Add_Num();
 
     cout << num1 << endl; 
