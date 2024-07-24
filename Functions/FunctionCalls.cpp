@@ -22,6 +22,29 @@ using namespace std;
         NOTE: We CANNOT jump into the middle of the stack, we must follow the LIFO principal. ALSO the call STACK IS FINITE in size. Activating too many functions on the callstack
               and we will get a stack overflow error, as it is possible to run out of stack space. This will terminate the program.
         
+    Inline Functions:
+        Sometimes we have simple functions and the function call overhead might be greater than the time executing the function. In cases like this we can tell the compiler,
+        to generate inline code. Inline code is inline assembly code that avoids the function call overhead.
+
+        Inline code is generaly faster, but if you inline a function may times, you are duplicating function code in many places which could lead to larger binaries. 
+        
+        NOTE: Compliers are very sophisticated and will likely inline even wihtout your suggestion. Also inine functions are usualy declared in the header or .h files,
+              since the definition must be avaiable to all files that use it.
+
+        Example of syntax for an inline function:
+
+        
+            inline int add_numbers(int a, int b){
+                return a + b;
+            }
+
+            int main(){
+
+                int result{0};
+                result = add_numbers(100,200); // call
+                return 0;
+            }
+        
 */
 
 int func1(int a, int b);
