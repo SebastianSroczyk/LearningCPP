@@ -82,7 +82,7 @@ int main(){
     pass_by_ref2(str); // Changes string
     cout << "After calling pass_by_ref2: " << str << endl; // 1000
     
-    vector<string> str_vec {"This vector string"};
+    vector<string> str_vec {"This vector string", "Another string", "And another"};
     display_ref3(str_vec);
     pass_by_ref3(str_vec);
     display_ref3(str_vec);
