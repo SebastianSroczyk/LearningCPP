@@ -11,7 +11,7 @@
 using namespace std;
 
 /*
-        Recursive Function - A function that calls itself, the function can call itself either directly or indirectly through another function. If we end up with more than 2 activation
+        Recursive Function - A function that calls itself, the function can call itself either directly or indirectly through another function. If we end up with 2 or more activation
                              records on the stack for the same function we have a recursion. Recursive Functions always have a base case and a recursive case.
 
                              Recursive problem solving can be difficult for beginners but can be used in many applications. These include but are not limited to:
