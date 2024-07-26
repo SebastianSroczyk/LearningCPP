@@ -1,5 +1,5 @@
 /*
-    Direct Memory Allocation
+    Dynamic Memory Allocation
     Author: Sebastian Sroczyk
     Date: 26/07/2024
 */
