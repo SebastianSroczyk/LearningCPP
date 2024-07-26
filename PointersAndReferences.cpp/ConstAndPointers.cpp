@@ -1,5 +1,5 @@
 /*
-    Dereferencing a pointer
+    constants and pointers
     Author: Sebastian Sroczyk
     Date: 26/07/2024
 */
