@@ -118,11 +118,11 @@ int main(){
     int *score_ptr{nullptr};
     score_ptr = &score;
 
-    cout << "\nValue of score is: " << score << endl; 
-    cout << "Value of score_ptr is: " << score_ptr << endl;    
-    cout << "Address of score is: " << &score << endl; 
+    cout << "\nValue of score is: " << score << endl;           // 10
+    cout << "Value of score_ptr is: " << score_ptr << endl;     // 0x5ffe54   
+    cout << "Address of score is: " << &score << endl;          // 0x5ffe54
 
-    
+    // score_ptr = &high_temp;          // Complier ERROR different data type    
 
     return 0;
 }
