@@ -1,7 +1,7 @@
 /*
-    Basics of Pointers
+    Dereferencing a pointer
     Author: Sebastian Sroczyk
-    Date: 25/07/2024
+    Date: 26/07/2024
 */
 
 #include <iostream>
@@ -90,7 +90,7 @@ int main(){
 
 
     cout << "\nPeople in a range-based for loop: ";
-    for (auto humans: *people_ptr){
+    for (auto humans: *people_ptr){ // The collection is not the pointer but the address it is pointing to, in this case that is the vector people.
         cout << humans << " ";
     }
     cout << endl;
