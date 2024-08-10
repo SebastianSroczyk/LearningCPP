@@ -42,7 +42,7 @@ void Populate_Array(int *arrLocation, const size_t arrSize){
     int startingNum {0};
 
     for(size_t i{0}; i < arrSize; ++i){
-        arrLocation[i] = startingNum++;
+        arrLocation[i] = startingNum++;  // could refactor it to use i. I.e.     arrLocation[i] = i;  There is no need for assigning another variable.
     }
 }
 void Display_Array(int *arrLocation, const size_t arrSize){
