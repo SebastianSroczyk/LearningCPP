@@ -62,14 +62,17 @@
             - It is NOT suitable for all types of problems
             - Not everything decomposes into a class
         
-        Learning Curve.
+        Learning Curve
+            - Steeper Learning curve especially with C++.
+            - Many Object Oriented languages, many Object Oriented concepts
 
+        Design
+            - Usualy takes longer to implement as more up front design is needed to create good models and hierarchies
 
-
-
-
-
-
-
+        Programs can be:
+            - Larger files size
+            - slower
+            - more complex
 
 */
+
