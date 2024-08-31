@@ -7,7 +7,8 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                // This shit here makes it work, Needs changing every single time I want another multi-file project to work
+                "${workspaceFolder}\\ObjectOrientedProgramming\\ImplementingMemberMethods\\*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
