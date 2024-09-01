@@ -10,7 +10,7 @@
 
 /*
 
-    Implementing Memeber Methods is simular to how we implement functions, In some cases Member methods are easier as they have access to other memeber,
+    Implementing Member Methods is simular to how we implement functions, In some cases Member methods are easier as they have access to other memeber,
     so we don't need to pass in so many arguments.  
 
     There are 3 ways Methods can be implemented:
