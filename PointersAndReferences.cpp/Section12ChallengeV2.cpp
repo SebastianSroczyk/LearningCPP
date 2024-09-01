@@ -76,21 +76,20 @@ void print( const int *const array, size_t array_size){
     for(size_t i {0}; i < array_size; ++i){
         cout << array[i] << " ";
     }
-    cout << "]" <<  endl;
+    cout << "]";
+    cout << endl;
     
 }
 
-int *apply_all( int *const arr1, size_t arr1_size, const int *const arr2, size_t arr2_size){
+int *apply_all(const int *const arr1, size_t arr1_size, const int *const arr2, size_t arr2_size){
 
-    int *dyn_arr {nullptr};
-    size_t dyn_arr_size {arr1_size * arr2_size};
-    dyn_arr = new int[dyn_arr_size];            // Allocated 15 elements in the Heap for array
+    int *dyn_arr{};
+    dyn_arr = new int[arr1_size * arr2_size];            // Allocated 15 elements in the Heap for array
     
     int position {0};
     for (size_t i {0}; i < arr2_size; ++i){
         for (size_t j {0}; j < arr1_size; ++j){
-            
-            dyn_arr[position] = arr1[i] * arr2[j];
+            dyn_arr[position] = arr1[j] * arr2[i];
             ++position;
         }
     }
