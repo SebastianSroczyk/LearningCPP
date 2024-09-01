@@ -8,7 +8,7 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 // This shit here makes it work, Needs changing every single time I want another multi-file project to work
-                "${workspaceFolder}\\ObjectOrientedProgramming\\DefaultConstructor\\*.cpp",
+                "${workspaceFolder}\\ObjectOrientedProgramming\\ConstructorInitializationLists\\*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

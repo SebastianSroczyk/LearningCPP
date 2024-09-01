@@ -15,6 +15,7 @@
         - Same name as the class
         - No return type is specified
         - Can be overloaded
+        - Each new constructor must have a unique signature!
 
         Example of a constructor for a Player class:
 
