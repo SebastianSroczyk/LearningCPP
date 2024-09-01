@@ -1,5 +1,5 @@
 /*
-    Constructors and Destructors PLAYER CLASS
+    Constructor Initialization Lists PLAYER CLASS
     Author: Sebastian Sroczyk
     Date: 01/09/2024
 */

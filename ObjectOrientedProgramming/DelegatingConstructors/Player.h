@@ -1,5 +1,5 @@
 /*
-    Constructor Initialization Lists HEADER FILE
+    Delegating Constructors HEADER FILE
     Author: Sebastian Sroczyk
     Date: 01/09/2024
 */
@@ -23,7 +23,11 @@ class Player{
 
         // Default Constructor Prototype
         Player();
-        //Overloaded Constructor Prototype
+        //1 args Overloaded Constructor Prototype
+        Player(std::string set_name);
+        //2 args Overloaded Constructor Prototype
+        Player(std::string set_name, int set_health);
+        //3 args Overloaded Constructor Prototype
         Player(std::string set_name, int set_health, int set_xp);
         // Destructor Prototype
         ~Player();
