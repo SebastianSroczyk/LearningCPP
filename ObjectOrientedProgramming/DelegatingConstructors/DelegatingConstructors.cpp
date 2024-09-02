@@ -42,8 +42,9 @@ int main(){
 
     Player *Sebastian = new Player("Sebastian");
     Sebastian->speak("This is pretty cool");
-
-
     delete Sebastian;
+    
+    // NOTE: When a delegate is called, the body of that constructor is called as well as the previous constructor's body that did the calling. 
+
     return 0;
 }
