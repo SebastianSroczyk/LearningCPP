@@ -1,0 +1,68 @@
+/*
+    Shallow copying w/ copy constructors
+    Author: Sebastian Sroczyk
+    Date: 02/09/2024
+*/
+
+#include <iostream>
+#include <string>
+
+/*
+    Shallow vs. Deep Copying
+
+        Consider a class that contians a pointer as a data member. A constructor allocates storgage dynamically and initializes the pointer.
+        A Destructor releases the memory allocated by the constructor.
+
+        What happens in the defualt copy constructor?
+
+            A shallow Copy is the default behaviour provided by the compiler generated copy constructor. It Basically does member-wise copying
+            of all object attributes. So you end up with the object and the copied object both pointing to the same area of storage in the heap.
+
+            - Member-wise copy
+            - Each data memeber is copied from the source
+            - The pointer is copied NOT what it points to
+
+            PROBLEM: When we release the storage in the destructor, the other object still refers to hte released storage!
+        
+        Shallow Copy Example:
+
+            class Shallow{
+                private:
+                    int *data;                              // Pointer
+                public:
+                    Shallow(int d);                         // Constructor
+                    Shallow(const Shallow &source);         // Copy Constructor
+                    ~Shallow();                             // Destructor
+            };
+
+            Shallow::Shallow(int d){
+                data = new int;                             // Allocate Storage
+                *data = d;
+            }
+
+            Shallow::~Shallow(){
+                delete data;                                // Freeing Storage
+                std::cout << "Destructor freeing data" << std::endl;
+            }
+
+            Shallow::Shallow(const Shallow &source)
+                : data(source.data){
+                    std::cout << "Copy Constructor - Shallow" << endl; 
+            }
+
+            NOTE: Shallow Copy - Only the pointer is copied - not what it is pointing to!
+            Problem: Source and the newly created object BOTH point to the SAME data area!
+
+            int main(){
+                Shallow obj1{100};
+                display_shallow(obj1);
+                // obj1's data has been released!
+
+                obj1.set_data_value(1000);
+                Shallow obj2 {obj1};
+                cout << "Hello World" << endl;
+                return 0;
+            }
+            
+
+*/
