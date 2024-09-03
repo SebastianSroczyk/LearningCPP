@@ -76,11 +76,15 @@ void display_shallow(Shallow s){
 
 int main(){
 
-    Shallow obj1 {100};
-    display_shallow(obj1);
+    Shallow obj1 {100};         // Object is created and declared
+    display_shallow(obj1);      // Object copy is made, and it's data is displayed, then obj1 - copy is destroyed as it goes out of scope.  
+                                // (This also displays obj1 data as the obejct has a raw pointer pointing to the same direction
+                                //  as obj1 and destorys the data of  obj1, this is an issue)
 
-    Shallow obj2 {obj1};
-    obj2.set_data_value(1000);
+    Shallow obj2 {obj1};        // Copy of obj1 is created (pointing to the same memory location as obj1, this is an issue)
+    obj2.set_data_value(1000);  // Value of obj2 is set to 1000 (This also sets the value of obj2 to 1000 as they both point to the same memeory location)
+
+    // THIS CODE CRASHES ON PURPOSE
 
     return 0;
 }
