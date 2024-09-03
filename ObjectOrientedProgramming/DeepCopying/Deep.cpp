@@ -10,7 +10,7 @@ Deep::Deep(int d){
     data = new int;     // Allocates Storage 
     *data = d;
 }
-/*
+/*      LESS EFFICIENT COPY (WORKS THE SAME AS THE OTHER COPY CONSTRUCTOR)
 Deep::Deep(const Deep &source){
     data = new int;         // Allocates Storage
     *data = *source.data;       // Copies source data to new storage
